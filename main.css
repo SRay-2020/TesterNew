@@ -1,0 +1,90 @@
+body {
+    font-family: 'Roboto Slab', sans-serif;
+}
+
+
+.callout-container {
+
+height:100vh;
+background: url("../images/Screensaver.jpg") no-repeat bottom right ; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
+  display:flex;
+  align-items: center;
+  justify-content:center;
+
+position: relative;
+
+}
+
+
+.opaque-overlay {
+position:absolute;
+top:0;
+left:0;
+height:100%;
+width: 100%;
+background-color: rgba(117, 117, 117, 0.096); 
+}
+
+.alert-container {
+
+}
+
+.nav-container {}
+
+.quote-container {}
+
+.feature-container {}
+
+.block-divider {
+    width: 75px;
+    height: 5px;
+    border: 0;
+    background-color: #f054f0;
+}
+
+/*Jumbotron*/
+.jumbotron {
+background-color: transparent; 
+}
+
+.jumbotron small {
+font-size:100%;
+color: rgb(191, 192, 192);
+font-style: italic;
+}
+
+.jumbotron .lead {
+
+    margin: 25px 0;
+    color: #02228a
+}
+
+.jumbotron-header {
+color: #000c04;
+font-weight: bold;
+margin-bottom: 30px;
+font-size: 70px;
+}
+
+/*buttons*/
+
+.btn--cta{
+
+font-weight: bold;
+border-radius: 23px;
+width:160px;
+}
+
+.btn--red{
+color: whitesmoke;
+background-color: rgb(204, 125, 125);
+border-color:  rgb(204, 125, 125);
+font-weight: bold;
+border-radius: 23px;
+width:160px;
+}

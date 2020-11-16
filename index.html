@@ -10,50 +10,60 @@
       crossorigin="anonymous"
     />
     <script
-      src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
-      integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
-      crossorigin="anonymous"
-    ></script>
-    <script
       src="https://kit.fontawesome.com/cdf97e27ed.js"
       crossorigin="anonymous"
     ></script>
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="main.css">
   </head>
   <body>
+   <div class="container nav-container">
     <nav class="navbar navbar-light bg-light navbar-expand-sm">
       <a href="/" class="navbar-brand">Whiskey Drop</a>
 
-<button class="navbar-toggler ml-auto" type="button" data-toggle="collapse"
-data-target ="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Togglenavigation">
-<span class="navbar-toggler-icon"></span>
-</button>
-<div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <button
+        class="navbar-toggler ml-auto"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNavDropdown"
+        aria-controls="navbarNavDropdown"
+        aria-expanded="false"
+        aria-label="Togglenavigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav mr-auto">
+          <li class="active nav-item mr-2">
+            <a class="nav-link" href="/">Home</a>
+          </li>
+          <li class="nav-item mr-2">
+            <a class="nav-link" href="/about">About</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a
+              href="#"
+              class="nav-link dropdown-toggle"
+              id="navbarDropdownMenuLink"
+              role="button"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+              >Whiskeys
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropDownMenuLink">
+              <a class="dropdown-item" href="#">Irish</a>
+              <a class="dropdown-item" href="#">Scotch</a>
+              <a class="dropdown-item" href="#">Japanese</a>
+              <a class="dropdown-item" href="#">American</a>
+            </div>
+          </li>
 
-
-      <ul class="navbar-nav mr-auto">
-        <li class="active nav-item mr-2">
-          <a class="nav-link" href="/">Home</a>
-        </li>
-        <li class="nav-item mr-2">
-          <a class="nav-link" href="/about">About</a>
-        </li>
-    <li class="nav-item dropdown">
-    <a href="#" class="nav-link dropdown-toggle"  id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" >Whiskeys
-    </a>
-    <div class="dropdown-menu" aria-labelledby="navbarDropDownMenuLink">
-    <a class="dropdown-item" href="#">Irish</a>
-    <a class="dropdown-item" href="#">Scotch</a>
-    <a class="dropdown-item" href="#">Japanese</a>
-    <a class="dropdown-item" href="#">American</a>
-    </div>
-    </li>
-
-
-        <li class="nav-item mr-2 d-block d-sm-none">
-          <a class="nav-link" href="/login">Sign in / Sign up</a>
-        </li>
-      </ul>
+          <li class="nav-item mr-2 d-block d-sm-none">
+            <a class="nav-link" href="/login">Sign in / Sign up</a>
+          </li>
+        </ul>
       </div>
       <div class="d-none d-md-block">
         <p class="navbar-text my-auto mr-2">
@@ -62,8 +72,10 @@ data-target ="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expande
         <a href="/login">Sign in / Sign up</a>
       </div>
     </nav>
+</div>
 
-    <article class="container mt-4">
+<!--<div class="container alert-container"></div>
+    <article class="container ">
       <div class="row d-none d-sm-block">
         <div class="col-12">
           <div class="alert alert-warning">
@@ -72,11 +84,19 @@ data-target ="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expande
             <a href="/">See here for deets</a>
           </div>
         </div>
-      </div>
+      </div>-->
+      
+      <div class="container-fluid callout-container">
+      <div class="opaque-overlay">&nbsp;</div>
       <div class="row">
         <div class="col-12">
           <section class="callout jumbotron text-center">
-            <h1>The finest whiskeys delivered to your doorstep</h1>
+          <br>
+          <br>
+          <br>
+            <h1 class="jumbotron-header">The finest whiskeys 
+            delivered to your doorstep</h1>
+            <hr class ="block-divider">
             <p class="lead">
               Sign up today to start receiving the world's best whiskeys every
               month. <s class="d-none d-sm-inline">€19.99</s>
@@ -89,12 +109,23 @@ data-target ="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expande
                 responsibly</small
               >
             </p>
-            <p><button type="button" class="btn btn-success btn-lg" data-toggle="modal" data-target="#exampleModal">Sign up!</button></p>
+            <p>
+              <button
+                type="button"
+                class="btn btn--red btn--cta btn-lg"
+                data-toggle="modal"
+                data-target="#exampleModal"
+              >
+                Sign up!
+              </button>
+            </p>
           </section>
         </div>
       </div>
+      </div>
+      
       <hr />
-
+<div class="container quote-container">
       <section class="blockquote">
         <div class="row">
           <div class="col-12 my-5">
@@ -154,8 +185,9 @@ data-target ="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expande
           </div>
         </div>
       </section>
+      </div>
       <hr />
-
+<div class="container feature-container">
       <section class="features">
         <div class="row">
           <div class="col-12 my-5">
@@ -210,6 +242,9 @@ data-target ="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expande
           </div>
         </div>
       </section>
+      </div>
+
+      <div class="container favs-container">
       <section>
         <div class="row">
           <h2 class="text-uppercase">
@@ -255,52 +290,84 @@ data-target ="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expande
           </table>
         </div>
       </section>
+      </div>
     </article>
 
-<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h5 class="modal-title" id="exampleModalLabel">Sign up to Whiskey Drop!</h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
+    <div
+      class="modal fade"
+      id="exampleModal"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">
+              Sign up to Whiskey Drop!
+            </h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form>
+              <div class="form-group">
+                <label for="exampleInputEmail1">Email address</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="exampleInputEmail1"
+                  aria-describedby="emailHelp"
+                />
+                <small id="emailHelp" class="form-text text-muted"
+                  >We'll never share your email with anyone else.</small
+                >
+              </div>
+              <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" class="form-control" id="password" />
+              </div>
+              <div class="form-group">
+                <label for="repeatPassword">Repeat Password</label>
+                <input
+                  type="password"
+                  class="form-control"
+                  id="repeatPassword"
+                />
+              </div>
+
+              <button type="submit" class="btn btn-success">Submit</button>
+            </form>
+          </div>
+        </div>
       </div>
-      <div class="modal-body">
-        <form>
-  <div class="form-group">
-    <label for="exampleInputEmail1">Email address</label>
-    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
-  </div>
-  <div class="form-group">
-    <label for="password">Password</label>
-    <input type="password" class="form-control" id="password">
-  </div>
-  <div class="form-group">
-    <label for="repeatPassword">Repeat Password</label>
-    <input type="password" class="form-control" id="repeatPassword">
-  </div>
-  
-  <button type="submit" class="btn btn-success">Submit</button>
-</form>
-      </div>
-      
     </div>
-  </div>
-</div>
 
-
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-  <script
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+      integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+      integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"
+    ></script>
+    <script
       src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
       integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
       crossorigin="anonymous"
     ></script>
-
-
-
   </body>
 </html>
