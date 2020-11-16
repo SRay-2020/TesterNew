@@ -18,6 +18,7 @@
       src="https://kit.fontawesome.com/cdf97e27ed.js"
       crossorigin="anonymous"
     ></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
   </head>
   <body>
     <nav class="navbar navbar-light bg-light navbar-expand-sm">
@@ -88,7 +89,7 @@ data-target ="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expande
                 responsibly</small
               >
             </p>
-            <button class="btn btn-success btn-lg">Sign up!</button>
+            <p><button type="button" class="btn btn-success btn-lg" data-toggle="modal" data-target="#exampleModal">Sign up!</button></p>
           </section>
         </div>
       </div>
@@ -255,6 +256,41 @@ data-target ="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expande
         </div>
       </section>
     </article>
+
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Sign up to Whiskey Drop!</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <form>
+  <div class="form-group">
+    <label for="exampleInputEmail1">Email address</label>
+    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+  </div>
+  <div class="form-group">
+    <label for="password">Password</label>
+    <input type="password" class="form-control" id="password">
+  </div>
+  <div class="form-group">
+    <label for="repeatPassword">Repeat Password</label>
+    <input type="password" class="form-control" id="repeatPassword">
+  </div>
+  
+  <button type="submit" class="btn btn-success">Submit</button>
+</form>
+      </div>
+      
+    </div>
+  </div>
+</div>
+
+
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
