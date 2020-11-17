@@ -18,8 +18,27 @@
    <link rel="stylesheet" href="main.css">
   </head>
   <body>
+
+  <div class="container-fluid navalert-container navbar">
+
+<div class="container alert-container">
+    <article class="container container-fluid ">
+      <div class="row d-none d-sm-block">
+        <div class="col-12">
+          <div class="site-wide-alert alert alert-warning">
+            <strong>Sale now on!</strong> We have a sale now on. Get a 12 month
+            subscription for the price of 6!
+            <a href="/">See here for deets</a>
+          </div>
+        </div>
+      </div>
+</div>
+
+
+
+
    <div class="container nav-container">
-    <nav class="navbar navbar-light bg-light navbar-expand-sm">
+    <nav class="navbar navbar-expand-sm navbar-dark">
       <a href="/" class="navbar-brand">Whiskey Drop</a>
 
       <button
@@ -69,28 +88,19 @@
         <p class="navbar-text my-auto mr-2">
           <i>Great whisky delivered to your door!</i>
         </p>
-        <a href="/login">Sign in / Sign up</a>
+        <a href="/login" class ="btn btn--cta btn--red">Sign in / Sign up</a>
       </div>
     </nav>
 </div>
 
-<!--<div class="container alert-container"></div>
-    <article class="container ">
-      <div class="row d-none d-sm-block">
-        <div class="col-12">
-          <div class="alert alert-warning">
-            <strong>Sale now on!</strong> We have a sale now on. Get a 12 month
-            subscription for the price of 6!
-            <a href="/">See here for deets</a>
-          </div>
-        </div>
-      </div>-->
-      
+<!---->
+      </div>
       <div class="container-fluid callout-container">
       <div class="opaque-overlay">&nbsp;</div>
       <div class="row">
         <div class="col-12">
           <section class="callout jumbotron text-center">
+          <br>
           <br>
           <br>
           <br>
@@ -103,7 +113,7 @@
               <span class="d-inline d-sm-none"><br /></span>
               <strong><mark>First one is free!</mark></strong>
             </p>
-            <p class="text-muted">
+            <p class="muted" >
               <small
                 >You must be over 18 to sign up to our service. Please drink
                 responsibly</small
@@ -124,12 +134,14 @@
       </div>
       </div>
       
-      <hr />
-<div class="container quote-container">
+      
+  <div class="container-wrapper">  
+<div class="container quote-container content-container">
       <section class="blockquote">
         <div class="row">
-          <div class="col-12 my-5">
-            <h2 class="text-uppercase">Quotes:</h2>
+          <div class="col-12 page-header">
+            <h2 class="text-uppercase text-align:center">Quotes:</h2>
+            <hr class="block-divider block-divider-short">
           </div>
         </div>
 
@@ -186,12 +198,15 @@
         </div>
       </section>
       </div>
-      <hr />
-<div class="container feature-container">
+      
+</div> 
+      <div class="container-wrapper container-wrapper--red">
+<div class="container features-container content-container">
       <section class="features">
         <div class="row">
-          <div class="col-12 my-5">
+          <div class="col-12 page-header">
             <h2 class="text-uppercase">Features:</h2>
+            <hr class="block-divider block-divider-short block-divider--white">
           </div>
         </div>
         <div class="row">
@@ -243,14 +258,13 @@
         </div>
       </section>
       </div>
-
-      <div class="container favs-container">
+</div>
+      <div class="container content-container">
       <section>
-        <div class="row">
           <h2 class="text-uppercase">
-            <i class="far fa-calendar-check"></i> MONTHLY FAVOURITES
+             MONTHLY FAVOURITES <i class="far fa-calendar-check d-none d-sm-block"></i>
           </h2>
-        </div>
+        
         <div class="row">
           <table class="table table-hover">
             <thead>
